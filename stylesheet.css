@@ -9,6 +9,10 @@ body {
   letter-spacing: .1rem;
 }
 
+section {
+  z-index: 1;
+}
+
 .flex {
   display: flex;
   align-content: center;
@@ -30,17 +34,48 @@ body {
   width: 200px;
   text-align: center;
   transition: all .5s;
+  cursor: pointer;
 }
-  .fa-arrow-right {
-    transition: transform .3s;
-  }
   .button:hover {
     background-color: #fac2c1;
     border-color: #fac2c1;
   }
-  .button:hover .fa-arrow-right {
-    transform: rotate(90deg);
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* KeyFrames */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+  20% {
+    opacity: .2;
+  }
+  40% {
+    opacity: .4;
+  }
+  50% {
+    opacity: .5;
+  }
+  60% {
+    opacity: .6;
+  }
+  70% {
+    opacity: .7;
+  }
+  80% {
+    opacity: .8;
+  }
+  90% {
+    opacity: .9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 /* Landing Screen */
@@ -69,16 +104,74 @@ body {
   text-align: center;
 }
 
+.fa-arrow-right {
+  transition: transform .3s;
+}
+.button:hover .fa-arrow-right {
+  transform: rotate(90deg);
+}
+
 /* Nav Bar */
+#nav-bar {
+  display: none;
+}
+#nav-bar.display {
+  display: block;
+}
+
 nav {
   color: white;
   font-family: "Cutive Mono";
   width: 100vw;
+  height: 4rem;
   justify-content: space-around;
+  background-color: #7EC6BA;
 }
-.flex li {
+
+  .fixed {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    animation: fadeIn .2s;
+  }
+
+nav h1 {
+  margin: auto 0;
+}
+
+.nav-ul li {
   list-style-type: none;
   padding: 20px;
 }
 
 /* Start screen banner */
+
+
+
+/* Skills Section */
+#skills {
+  background-color: #DE6239;
+  opacity: .75;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Project Section */
+#projects {
+  background-color: #418A7D;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* About Me Section */
+#about {
+  background-color: #FAC2C1;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Footer */
+footer {
+  width: 100vw;
+  height: 100vh;
+}
