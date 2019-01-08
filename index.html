@@ -12,11 +12,11 @@
   </head>
   <body>
 
-    <section class="canvas">
+    <section id="canvas" class="canvas">
       <div class="canvas-header">
         <h1>Hello, I'm <span class="highlight">Tiffany Ray</span>.</h1>
         <h4>I'm a front-end web developer.</h4>
-        <a href="#skills"><p class="button"">View my work  <i class="fas fa-arrow-right"></i></p></a>
+        <a href="#skills" class="scrollLink"><p class="button"">View my work  <i class="fas fa-arrow-right"></i></p></a>
       </div>
     </section>
 
@@ -25,10 +25,10 @@
       <nav class="flex">
         <h1>Code By Tiff</h1>
         <ul class="flex nav-ul">
-          <li>Home</li>
-          <li>Skills</li>
-          <li>My  Projects</li>
-          <li>About Me</li>
+          <li><a href="#canvas" id="home-a" class="scrollLink home">Home</li>
+          <li><a href="#skills" id="skills-a" class="scrollLink skills">Skills</li>
+          <li><a href="#projects" id="projects-a" class="scrollLink projects">My  Projects</li>
+          <li><a href="#about" id="about-a" class="scrollLink about">About Me</li>
         </ul>
       </nav>
     </div>
