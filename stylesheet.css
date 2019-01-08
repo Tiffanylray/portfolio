@@ -9,14 +9,64 @@ body {
   letter-spacing: .1rem;
 }
 
-.container {
+.flex {
   display: flex;
-  justify-content: space-around;
+  align-content: center;
 }
 
-.full-screen {
+.column {
+  flex-direction: column;
+}
+
+.highlight {
+  color: #fac2c1;
+}
+
+.button {
+  font-size: 1.25rem;
+  border: 2px solid white;
+  margin: 20px auto;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  transition: all .5s;
+}
+  .fa-arrow-right {
+    transition: transform .3s;
+  }
+  .button:hover {
+    background-color: #fac2c1;
+    border-color: #fac2c1;
+  }
+  .button:hover .fa-arrow-right {
+    transform: rotate(90deg);
+  }
+
+
+/* Landing Screen */
+.canvas {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  color: white;
+}
+
+.canvas-header {
+  position: relative;
+  top: 30vh;
+}
+
+.canvas h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.canvas h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 /* Nav Bar */
@@ -24,9 +74,9 @@ nav {
   color: white;
   font-family: "Cutive Mono";
   width: 100vw;
-  position: fixed;
+  justify-content: space-around;
 }
-.container li {
+.flex li {
   list-style-type: none;
   padding: 20px;
 }
