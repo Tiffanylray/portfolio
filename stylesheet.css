@@ -23,7 +23,7 @@ section {
 }
 
 .highlight {
-  color: #fac2c1;
+  color: #FECFB0;
 }
 
 .button {
@@ -37,8 +37,8 @@ section {
   cursor: pointer;
 }
   .button:hover {
-    background-color: #fac2c1;
-    border-color: #fac2c1;
+    background-color: #FECFB0;
+    border-color: #FECFB0;
   }
 
 a {
@@ -87,29 +87,25 @@ a {
   align-content: flex-end;
   color: white;
 }
-
-.canvas-header {
-  position: relative;
-  top: 30vh;
-}
-
-.canvas h1 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.canvas h4 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.fa-arrow-right {
-  transition: transform .3s;
-}
-.button:hover .fa-arrow-right {
-  transform: rotate(90deg);
-}
+  .canvas-header {
+    position: relative;
+    top: 30vh;
+  }
+  .canvas h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .canvas h4 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .fa-arrow-right {
+    transition: transform .3s;
+  }
+  .button:hover .fa-arrow-right {
+    transform: rotate(90deg);
+  }
 
 /* Nav Bar */
 #nav-bar {
@@ -127,7 +123,6 @@ nav {
   justify-content: space-around;
   background-color: #7EC6BA;
 }
-
   .fixed {
     position: fixed;
     top: 0;
@@ -143,10 +138,15 @@ nav h1 {
   list-style-type: none;
   padding: 20px;
 }
-
-/* Start screen banner */
-
-
+.nav-ul a {
+  transition: all .5s;
+}
+  .nav-ul a:hover {
+    color: #FECFB0;
+  }
+  .active {
+    color: #DE6239;
+  }
 
 /* Skills Section */
 #skills {
@@ -165,7 +165,7 @@ nav h1 {
 
 /* About Me Section */
 #about {
-  background-color: #FAC2C1;
+  background-color: #FECFB0;
   width: 100vw;
   height: 100vh;
 }
