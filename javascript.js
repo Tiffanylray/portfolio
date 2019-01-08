@@ -40,6 +40,9 @@ $(document).ready(() => {
     }
     if (sectionTop > $('#about').offset().top) {
       highlightLink('about-a');
+    }
+    if (sectionTop > $('#contact').offset().top) {
+      highlightLink('contact-a');
     };
 
     function highlightLink(id) {
