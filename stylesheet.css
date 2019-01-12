@@ -90,15 +90,18 @@ a {
   .canvas-header {
     position: relative;
     top: 30vh;
+    text-align: center;
   }
   .canvas h1 {
     font-size: 3rem;
-    text-align: center;
   }
   .canvas h4 {
     font-size: 2rem;
     margin-top: 1rem;
-    text-align: center;
+  }
+  .canvas p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
   }
   .fa-arrow-right {
     transition: transform .3s;
