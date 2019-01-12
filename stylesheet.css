@@ -184,3 +184,12 @@ footer {
   width: 100vw;
   height: 100vh;
 }
+
+.socialmedia-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.socialmedia {
+  width: 60px;
+}
