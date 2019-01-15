@@ -27,6 +27,28 @@ h2 {
   text-align: center;
   line-height: 1.5rem;
   padding-bottom: 3rem;
+  font-size: 1.25rem;
+}
+
+.text-left {
+  width: 70vw;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 2rem;
+  padding: 3rem;
+  font-size: 1.25rem;
+}
+
+.icon-div {
+  font-size: 3.25rem;
+  color: white;
+}
+.icon {
+  padding: 1.25rem;
+}
+.icon-jquery {
+  width: 3.25rem;
+  padding: 1.25rem;
 }
 
 .flex {
@@ -75,7 +97,12 @@ a {
   border-bottom: 1.5px solid #7EC6BA;
 }
 
-
+.photo-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
 
 
 /* KeyFrames */
@@ -188,6 +215,19 @@ nav h1 {
 #skills, #projects, #about {
   background-color: #FECFB0;
 }
+
+/* About Section */
+
+.photo-div {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+}
+
 
 /* Contant Me Section */
 #contact {
