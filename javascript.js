@@ -32,14 +32,14 @@ $(document).ready(() => {
 
     //Highlighing Nav Links
 
+    if (sectionTop > $('#about').offset().top) {
+      highlightLink('about-a');
+    }
     if (sectionTop > $('#skills').offset().top) {
       highlightLink('skills-a');
     }
     if (sectionTop > $('#projects').offset().top) {
       highlightLink('projects-a');
-    }
-    if (sectionTop > $('#about').offset().top) {
-      highlightLink('about-a');
     }
     if (sectionTop > $('#contact').offset().top) {
       highlightLink('contact-a');
