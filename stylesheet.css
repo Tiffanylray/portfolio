@@ -13,6 +13,22 @@ section {
   z-index: 1;
 }
 
+h2 {
+  width: 100vw;
+  padding: 4.5rem 0 20px 0;
+  text-align: center;
+  font-family: "Cutive Mono";
+  font-size: 3rem;
+}
+
+.text {
+  width: 70vw;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5rem;
+  padding-bottom: 3rem;
+}
+
 .flex {
   display: flex;
   align-content: center;
@@ -45,6 +61,22 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.section-break {
+  width: 100vw;
+  align-content: center;
+  background-color: #FECFB0;
+  padding-top: 50px;
+}
+
+.line-break {
+  width: 75vw;
+  margin: 0 auto;
+  border-bottom: 1.5px solid #7EC6BA;
+}
+
+
+
 
 /* KeyFrames */
 @keyframes fadeIn {
@@ -82,6 +114,7 @@ a {
 .canvas {
   width: 100vw;
   height: 100vh;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-content: flex-end;
@@ -152,25 +185,8 @@ nav h1 {
   }
 
 /* Skills Section */
-#skills {
-  background-color: #DE6239;
-  opacity: .75;
-  width: 100vw;
-  height: 100vh;
-}
-
-/* Project Section */
-#projects {
-  background-color: #418A7D;
-  width: 100vw;
-  height: 100vh;
-}
-
-/* About Me Section */
-#about {
+#skills, #projects, #about {
   background-color: #FECFB0;
-  width: 100vw;
-  height: 100vh;
 }
 
 /* Contant Me Section */
