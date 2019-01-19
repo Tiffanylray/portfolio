@@ -231,14 +231,12 @@ nav h1 {
 
 /* Contant Me Section */
 #contact {
-  width: 100vw;
-  height: 100vh;
+  color: white;
 }
 
 /* Footer/ Social Media Links */
 footer {
-  width: 100vw;
-  height: 100vh;
+  padding-bottom: 6rem;
 }
 
 .socialmedia-container {
