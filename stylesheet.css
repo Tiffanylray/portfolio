@@ -39,18 +39,6 @@ h2 {
   font-size: 1.25rem;
 }
 
-.icon-div {
-  font-size: 3.25rem;
-  color: white;
-}
-.icon {
-  padding: 1.25rem;
-}
-.icon-jquery {
-  width: 3.25rem;
-  padding: 1.25rem;
-}
-
 .flex {
   display: flex;
   align-content: center;
