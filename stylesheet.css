@@ -173,10 +173,11 @@ nav {
   height: 4rem;
   justify-content: space-around;
   background-color: #7EC6BA;
+  opacity: .9;
 }
   .fixed {
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 100;
     animation: fadeIn .2s;
   }
