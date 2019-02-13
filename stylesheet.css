@@ -72,10 +72,13 @@ a {
   color: inherit;
 }
 
+
+/* Section Break */
+
 .section-break {
   width: 100vw;
   align-content: center;
-  background-color: #FECFB0;
+  background-color: white;
   padding-top: 50px;
 }
 
@@ -197,12 +200,13 @@ nav h1 {
     color: #FECFB0;
   }
   .active {
-    color: #DE6239;
+    color: #FECFB0;
   }
 
 /* Skills Section */
 #skills, #projects, #about {
-  background-color: #FECFB0;
+  background-color: white;
+  color: #626262;
 }
 
 /* About Section */
