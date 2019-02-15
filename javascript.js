@@ -10,12 +10,26 @@ $(document).ready(() => {
   });
 
 
-  //Nav Bar
+  //Mobile Nav bar 
+  $('#mobile-menu').on('click', () => {
+    let $navUl = $('.nav-ul');
+    let $mobileMenu = $('#mobile-menu');
+    $('.nav-ul').addClass().slideToggle('slow');
+  });
+
+  $(window).bind("resize", () => {
+    if( $(window).width() > 900) {
+      $('.nav-menu').removeAttr("style");
+    }
+  });
+
+
+  //Nav Bar Link highlights
   $(window).on('scroll', function() {
     let pos = $(window).scrollTop();
     let sectionTop = pos + 70;
     let navBar = $('#nav-bar');
-    let nav = navBar.find('nav');
+    let nav = navBar.find('.nav');
     let navUl = nav.find('.nav-ul');
     let navPos = navBar.position().top;
 
