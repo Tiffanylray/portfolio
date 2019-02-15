@@ -141,7 +141,7 @@ a {
 }
   .canvas-header {
     position: relative;
-    top: 30vh;
+    top: 20vh;
     text-align: center;
   }
   .canvas h1 {
@@ -149,7 +149,9 @@ a {
   }
   .canvas h4 {
     font-size: 2rem;
+    margin: auto;
     margin-top: 1rem;
+    width: 80vw;
   }
   .canvas p {
     font-size: 1.25rem;
@@ -161,6 +163,43 @@ a {
   .button:hover .fa-arrow-right {
     transform: rotate(90deg);
   }
+
+
+/* Changes the canvas header to view better on different screen heights */ 
+@media only screen and (min-height: 600px) {
+  .canvas-header {
+    line-height: 3rem;
+  }
+  .canvas h4 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-height: 800px) {
+  .canvas-header * {
+    line-height: 4rem;
+  }
+}
+@media only screen and (min-height: 1000px) {
+  .canvas-header {
+    top: 30vh;
+  }
+}
+@media only screen and (min-height: 1300px) {
+  .canvas h1 {
+    font-size: 5rem;
+  }
+  .canvas h4 {
+    font-size: 3rem;
+  }
+  .canvas p {
+    font-size: 2rem;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  .canvas-header * {
+    margin-bottom: 20px;
+  }
+}
 
 
 
@@ -183,7 +222,7 @@ a {
 
 .nav h1 {
   box-sizing: border-box;
-  width: 30vw;
+  width: auto;
   margin: auto;
   margin-left: 0;
   padding-left: 20px;
