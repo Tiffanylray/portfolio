@@ -255,10 +255,6 @@ a {
   text-align: right;
 }
 
-
-
-
-
 /* Nav js attributes */ 
 
 /* display nav section after the screen scrolls past landing page */
@@ -292,8 +288,16 @@ a {
   color: #FECFB0;
 }
 
-
-
+/* Media query for desktop */
+@media only screen and (min-width: 900px) {
+  #mobile-menu {
+    display: none;
+  }
+  .nav-ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 
 
