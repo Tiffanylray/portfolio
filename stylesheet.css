@@ -162,83 +162,103 @@ a {
     transform: rotate(90deg);
   }
 
-/* Nav Bar */
 
-/* display nav section after the screen scrolls past landing page */
-#nav-bar {
-  display: none;
-}
-/* tranisition atrribute for js */
-#nav-bar.display {
-  display: block;
-}
+
+
+
+
+/* Navigation Bar */
 
 /* Full Nav Bar Styles */
-nav {
+.nav {
   color: white;
-  font-family: 'Lato', sans-serif;;
+  font-family: 'Lato', sans-serif;
   width: 100vw;
-  height: 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  min-height: 4rem;
   background-color: #7EC6BA;
   opacity: .9;
+  display: flex;
+  justify-content: space-between;
 }
-  .fixed {
-    position: fixed;
-    top: 0px;
-    z-index: 100;
-    animation: fadeIn .2s;
-  }
 
-nav h1 {
+.nav h1 {
   box-sizing: border-box;
   width: 30vw;
-  margin: auto 0;
-  text-align: center;
+  margin: auto;
+  margin-left: 0;
+  padding-left: 20px;
+}
+
+.nav-menu {
+  margin: auto 0 auto auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#mobile-menu {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-right: 0;
+  padding: 20px;
+  cursor: pointer;
 }
 
 .nav-ul {
   box-sizing: border-box;
-  width: 70vw;
+  display: none;
 }
 
 .nav-ul li {
   list-style-type: none;
   padding: 20px;
+  text-align: right;
 }
-.nav-ul a {
-  transition: all .5s;
-}
-  .nav-ul a:hover {
-    color: #FECFB0;
-  }
-  .active {
-    color: #FECFB0;
-  }
 
-/* Mobile Nav Menu Display */ 
-#mobile-menu {
+
+
+
+
+/* Nav js attributes */ 
+
+/* display nav section after the screen scrolls past landing page */
+#nav-bar {
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
-  #mobile-menu {
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: auto 20px auto auto;
-  }
-  .nav-ul {
-    display: none;
-  }
-  nav h1 {
-    width: auto;
-    margin-left: 20px;
-  }
-
+/* tranisition atrribute for js */
+#nav-bar.display {
+  display: block;
 }
+
+/* Attribute nav fade in for js */
+.fixed {
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  animation: fadeIn .2s;
+}
+
+/* Handles how link anchors will transition */
+.nav-ul a {
+  transition: all .5s;
+}
+
+/* Handles how anchors change when hover & js uses active attribute */
+.nav-ul a:hover {
+  color: #FECFB0;
+}
+.active {
+  color: #FECFB0;
+}
+
+
+
+
+
+
+
 
 
 
