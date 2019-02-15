@@ -181,7 +181,7 @@ nav {
   height: 4rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #7EC6BA;
   opacity: .9;
 }
@@ -196,7 +196,7 @@ nav h1 {
   box-sizing: border-box;
   width: 30vw;
   margin: auto 0;
-  text-align: center
+  text-align: center;
 }
 
 .nav-ul {
@@ -217,6 +217,30 @@ nav h1 {
   .active {
     color: #FECFB0;
   }
+
+/* Mobile Nav Menu Display */ 
+#mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  #mobile-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto 20px auto auto;
+  }
+  .nav-ul {
+    display: none;
+  }
+  nav h1 {
+    width: auto;
+    margin-left: 20px;
+  }
+
+}
+
+
 
 /* Skills Section */
 #skills, #projects, #about {
