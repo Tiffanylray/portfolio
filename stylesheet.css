@@ -15,7 +15,6 @@ section {
 
 h2 {
   width: 100vw;
-  padding: 4.5rem 0 20px 0;
   text-align: center;
   font-family: 'Lato', sans-serif;;
   font-size: 3rem;
@@ -75,19 +74,40 @@ a {
 
 
 /* Section Break */
-
-.section-break {
-  width: 100vw;
-  align-content: center;
-  background-color: white;
-  padding-top: 50px;
+.slantedDivA, .slantedDivB {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #FECFB0;
+}
+.slantedDivA:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-origin: top right;
+  transform: skewY(4deg);
 }
 
-.line-break {
-  width: 75vw;
-  margin: 0 auto;
-  border-bottom: 1.5px solid #7EC6BA;
+.slantedDivB:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-origin: top left;
+  transform: skewY(4deg);
 }
+
 
 .photo-flex {
   display: flex;
@@ -306,10 +326,18 @@ a {
 
 
 /* Skills Section */
-#skills, #projects, #about {
+#skills {
+  background-color: #FECFB0;
+}
+
+
+ #projects, #about {
   background-color: white;
   color: #626262;
+  width: 100%;
+  padding: 100px 0;
 }
+
 
 /* About Section */
 
@@ -322,6 +350,7 @@ a {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 70px;
 }
 
 /* Skills Section */
