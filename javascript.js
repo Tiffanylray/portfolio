@@ -19,7 +19,7 @@ $(document).ready(() => {
 
   $(window).bind("resize", () => {
     if( $(window).width() > 900) {
-      $('.nav-menu').removeAttr("style");
+      $('.nav-ul').removeAttr("style");
     }
   });
 
