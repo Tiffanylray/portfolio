@@ -335,7 +335,7 @@ a {
   bottom: 0;
   left: 0;
   transform-origin: top right;
-  transform: skewY(6deg);
+  transform: skewY(7deg);
 }
 .slantedContact:after {
   position: absolute;
@@ -347,7 +347,7 @@ a {
   bottom: 0;
   right: 0;
   transform-origin: top left;
-  transform: skewY(-6deg);
+  transform: skewY(-7deg);
 }
 
 
@@ -368,16 +368,55 @@ a {
 
 /* About Section */
 
+/* .text-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
+
+.text-col-a {
+  position: relative;
+  top: 30px;
+  left: 10vw;
+  width: 40vw;
+  padding: 60px;
+  height: auto;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  text-align: left;
+  background: hsla(168, 5%, 75%, .25);
+  border-radius: 25px;
+  z-index: 10;
+}
+.text-col-b {
+  position: relative;
+  left: 10vw;
+  top: -90px;
+  width: 40vw;
+  padding: 60px;
+  height: auto;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  text-align: left;
+  background: hsla(168, 5%, 75%, .25);
+  border-radius: 25px;
+  z-index: 10;
+}
+
+
+
 .photo-div {
   width: 40vw;
-  margin: 0 auto;
+  position: relative;
+  top: -30px;
+  left: 48vw;
+  z-index: 0;
 }
 
 .about-photo {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 70px;
 }
 
 /* Skills Section */
