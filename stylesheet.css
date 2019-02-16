@@ -72,43 +72,6 @@ a {
   color: inherit;
 }
 
-
-/* Section Break */
-.slantedDivA, .slantedDivB {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  background: #FECFB0;
-}
-.slantedDivA:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: inherit;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transform-origin: top right;
-  transform: skewY(4deg);
-}
-
-.slantedDivB:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: inherit;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transform-origin: top left;
-  transform: skewY(4deg);
-}
-
-
 .photo-flex {
   display: flex;
   flex-wrap: wrap;
@@ -320,9 +283,72 @@ a {
 }
 
 
-
-
-
+/* Section Breaks */
+/* Slanted Divs for skill section */
+.slantedSkillsA, .slantedSkillsB {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #FECFB0;
+}
+.slantedSkillsA:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-origin: top right;
+  transform: skewY(4deg);
+}
+.slantedSkillsB:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-origin: top left;
+  transform: skewY(4deg);
+}
+/* Slanted Divs for contact section */ 
+.slantedContact {
+  position: relative;
+  top: 10px;
+  width: 100%;
+  height: 150px;
+  background: inherit;
+}
+.slantedContact:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  top:0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(6deg);
+}
+.slantedContact:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  top:0;
+  bottom: 0;
+  right: 0;
+  transform-origin: top left;
+  transform: skewY(-6deg);
+}
 
 
 /* Skills Section */
@@ -359,20 +385,21 @@ a {
   padding: 1.5rem;
 }
 
-
-/* Contant Me Section */
-#contact {
+/* Footer/ Social Media Links */
+footer {
+  padding-bottom: 8rem;
   color: white;
 }
 
-/* Footer/ Social Media Links */
-footer {
-  padding-bottom: 6rem;
+footer h3 {
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 .socialmedia-container {
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .socialmedia {
