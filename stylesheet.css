@@ -368,55 +368,70 @@ a {
 
 /* About Section */
 
-/* .text-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} */
-
-.text-col-a {
-  position: relative;
-  top: 30px;
-  left: 10vw;
-  width: 40vw;
-  padding: 60px;
-  height: auto;
-  line-height: 2rem;
-  font-size: 1.25rem;
-  text-align: left;
-  background: hsla(168, 5%, 75%, .25);
+.mobile-view {
+  box-sizing: border-box;
+  width: 90vw;
+  margin: 15px auto;
+  background: hsla(168, 5%, 75%, .1);
   border-radius: 25px;
-  z-index: 10;
+  padding: 15px;
 }
-.text-col-b {
-  position: relative;
-  left: 10vw;
-  top: -90px;
-  width: 40vw;
-  padding: 60px;
-  height: auto;
-  line-height: 2rem;
-  font-size: 1.25rem;
-  text-align: left;
-  background: hsla(168, 5%, 75%, .25);
-  border-radius: 25px;
-  z-index: 10;
-}
-
-
-
-.photo-div {
-  width: 40vw;
-  position: relative;
-  top: -30px;
-  left: 48vw;
-  z-index: 0;
+.about-photo-div {
+  width: 85vw;
+  margin: 15px auto;
+  border-radius: 10px;
 }
 
 .about-photo {
-  width: 100%;
-  height: auto;
+  width: 85vw;
+  margin: 15px auto;
   border-radius: 10px;
+}
+
+
+@media only screen and (min-width: 700px) {
+  .text-col-a {
+    position: relative;
+    margin: 30px;
+    left: 5vw;
+    width: 60vw;
+    padding: 60px;
+    height: auto;
+    line-height: 2rem;
+    font-size: 1.25rem;
+    text-align: left;
+    background: hsla(168, 5%, 75%, .15);
+    border-radius: 25px;
+    z-index: 10;
+  }
+  .text-col-b {
+    position: relative;
+    margin: 30px;
+    left: 5vw;
+    width: 60vw;
+    padding: 60px;
+    height: auto;
+    line-height: 2rem;
+    font-size: 1.25rem;
+    text-align: left;
+    background: hsla(168, 5%, 75%, .15);
+    border-radius: 25px;
+    z-index: 10;
+  }
+  .about-photo-div {
+    margin: 10px;
+    width: 55vw;
+    position: relative;
+    left: 38vw;
+    z-index: 0;
+  }
+  
+  .about-photo {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
 }
 
 /* Skills Section */
