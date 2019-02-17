@@ -440,6 +440,29 @@ a {
   padding: 1.5rem;
 }
 
+
+/* Projects Section */
+#projects * {
+  margin: 20px auto;
+}
+
+.projects-flex {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.project {
+  width: 40vw;
+  height: auto;
+
+}
+.project h1 {
+  text-align: center;
+}
+
+
+
 /* Footer/ Social Media Links */
 footer {
   padding-bottom: 8rem;
