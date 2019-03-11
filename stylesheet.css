@@ -13,7 +13,7 @@ section {
   z-index: 1;
 }
 
-h2 {
+.section-heading {
   width: 100vw;
   text-align: center;
   font-family: 'Lato', sans-serif;;
@@ -442,26 +442,103 @@ a {
 
 
 /* Projects Section */
-#projects * {
-  margin: 20px auto;
-}
-
-.projects-flex {
+.projects-div {
+  width: 90vw;
+  margin: 0 auto;
   display: flex;
-  width: 100vw;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
 }
-.project {
-  width: 40vw;
-  height: auto;
 
-}
-.project h1 {
+.projects-div h1 {
   text-align: center;
+  padding: .5rem;
+  margin-top: .75rem;
+  font-weight: 700;
 }
 
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  padding-bottom: 1.5rem;
+}
 
+.project-info {
+  box-sizing: border-box;
+  padding: .5rem 0;
+  margin: 1.5rem 0;
+}
+
+/* Project Pictures & overlay */
+.project-pic-div {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.project-video-div {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+}
+
+.project-overlay {
+  transition: all .5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-button {
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  box-sizing: border-box;
+  width: 75px;
+  height: auto;
+  margin: .5rem;
+  padding: .85rem;
+  cursor: pointer;
+  outline: none;
+  background-color: #7EC6BA;
+  color: white;
+  border: 2px solid white;
+}
+
+.project-overlay:hover {
+  opacity: .9;
+}
+
+.project-overlay:hover .project-button {
+  opacity: 1;
+}
+
+.project-button:hover {
+  background-color: #FECFB0;
+  border-color: #FECFB0;
+}
+
+@media screen and (min-width: 900px) {
+  .project-info {
+    width: 50vw;
+    padding: 1rem
+  }
+}
 
 /* Footer/ Social Media Links */
 footer {

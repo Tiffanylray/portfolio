@@ -40,7 +40,7 @@
   </header>
 
     <section id="about">
-      <h2>About Me</h2>
+      <h2 class="section-heading">About Me</h2>
       <p class="text-col-a mobile-view">I am a passionate self-taught developer with an eager drive to create influential media focusing on responsive, user-friendly web soultions.
       During my spare time, I have been learning to program which has helped me cultivate the ability to adapt to new technologies & environments quickly.
       I enjoy working with HTML, CSS, SASS, and all JavaScript core technologies.
@@ -59,7 +59,7 @@
     </div>
 
     <section id="skills">
-      <h2>Technical Skills</h2>
+      <h2 class="section-heading">Technical Skills</h2>
       <div class="text-left">
         <p>Languages:</p>
         <div>
@@ -82,44 +82,128 @@
     
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-flex">
-          <div class="javascript project">
-            <h1>JavaScript Projects:</h1>
-            <p><a href="https://tiffanyray.github.io/highlightingBoxes" target="_blank">highlightingBoxes</a></p>
-            <p class="small-list">For this project, I used jQuery eventListeners to change the color of div boxes when the mouse hovers over the element.</p>
-            <p><a href="https://tiffanyray.github.io/quiz/" target="_blank">quiz</a></p>
-            <p class="small-list">When the quiz is submitted, an eventListener collects the value's of the radio buttons. If statements add up the global variable score of the quiz based on the value of each question. Then assigns a message to the modal calucated off of the score.</p>
-            <p><a href="https://tiffanyray.github.io/modal/" target="_blank">modal</a></p>
-            <p class="small-list">A project that contains a basic modal for use in other projects!</p>
-            <p><a href="https://tiffanyray.github.io/navBarExample/" target="_blank">navBarExample</a></p>
-            <p class="small-list">A quick and easy navigation bar that is mobile first design. I created this project to use in other projects.</p>
+        <h2 class="section-heading">Projects</h2>
+        <div class="projects-div">
+          <!-- React Projects -->
+          <h1>React Projects:</h1>
+          <div>
+            <div class="project">
+              <div class="project-info">
+                <h2>TicTacToe</h2>
+                <p>A game that uses React to store the data of previous states of the game. This allows the player to go back to any individual move of the game.</p>
+              </div>
+              <div class="project-pic-div">
+                <img src="img/ticTacToe.jpeg" alt="TicTacToe Game" class="project-image" />
+                <div class="project-overlay">
+                  <button class="project-button"><a href="https://tiffanyray.github.io/ticTacToe/" target="_blank" >Project</a></button>
+                  <button class="project-button"><a href="https://github.com/tiffanyray/ticTacToe/tree/master/src" target="_blank" >Code</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-info">
+                <h2>Indecision App</h2>
+                <p>This is the first project I made with React! It utilizes Webpack, Babel, NPM, and SASS.</p>
+              </div>
+              <div class="project-pic-div">
+                <img src="img/indecision.png" alt="Indecision App Picture for links" class="project-image" />
+                <div class="project-overlay">
+                  <button class="project-button"><a href="https://tiffanyray.github.io/indecision/" target="_blank" >Project</a></button>
+                  <button class="project-button"><a href="https://github.com/tiffanyray/indecision/tree/master/src" target="_blank" >Code</a></button>  
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-info">
+                <h2>Quote Generator</h2>
+                <p>A project that I build using an API to source the quote. Other technologies include React, Webpack, SASS, JavaScript, and HTML.</p>
+              </div>
+              <div class="project-pic-div">
+                <img src="img/quoteGen.jpeg" alt="Design Quote Generator" class="project-image" />
+                <div class="project-overlay">
+                  <button class="project-button"><a href="https://tiffanyray.github.io/quoteGenerator/" target="_blank" >Project</a></button>
+                  <button class="project-button"><a href="https://github.com/tiffanyray/quoteGenerator/tree/master/src" target="_blank" >Code</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-info">
+                <h2>Markdown Generator</h2>
+                <p>This project was built with React, SASS, & Webpack. This uses Markdown-js parse library avaiable on NPM.</p>
+              </div>
+              <div class="project-pic-div">
+                <img src="img/markdown.png" alt="Markdown Generator" class="project-image" />
+                <div class="project-overlay">
+                  <button class="project-button"><a href="https://tiffanyray.github.io/markdown/" target="_blank" >Project</a></button>
+                  <button class="project-button"><a href="https://github.com/tiffanyray/markdown/tree/master/src" target="_blank" >Code</a></button>
+                </div>
+              </div>
+            </div>
+          </div><!-- End of React Project's Div -->
+          <!--  Javascript Projects -->
+          <h1>JavaScript Projects:</h1>
+          <div class="project">
+            <div class="project-info">
+              <h2>HighlightingBoxes</h2>
+              <p>For this project, I used jQuery eventListeners to change the color of div boxes when the mouse hovers over the element.</p>
+            </div>
+            <div class="project-video-div">
+              <video autoplay loop width="300">
+                <source src="img/highlightingBoxes.mp4" type="video/mp4">
+                  Sorry, your browser doesn't support embeded videos..
+              </video>
+              <div class="project-overlay">
+                  <button class="project-button"><a href="https://tiffanyray.github.io/highlightingBoxes/" target="_blank" >Project</a></button>
+                  <button class="project-button"><a href="https://github.com/tiffanyray/highlightingBoxes" target="_blank" >Code</a></button>
+              </div>
+            </div>
           </div>
-          <div class="css project">
-            <h1>CSS/SASS Projects:</h1>
-            <p><a href="https://tiffanyray.github.io/boatStorage" target="_blank">boatStorage</a></p>
-            <p class="small-list">This project is a redesign of my inlaws business website. They currently have an outdated website that hasn't been worked on for years. I have been working on this redesign to suprise them sometime in the near future.</p>
-            <p><a href="https://tiffanyray.github.io/calendar" target="_blank">calendar</a></p>
-            <p class="small-list">I wanted to avoid using HTML tables when creating this project. Instead, I used unordered list to create a responive layout. I also used SASS to create the styles of this calendar.</p>
-            <p><a href="https://tiffanyray.github.io/landingPage" target="_blank">landingPage</a></p>
-            <p class="small-list">A classic landing page.</p>
-            <p><a href="https://tiffanyray.github.io/climbOn" target="_blank">climbOn</a></p>
-            <p>One of my hobbies is rock climbing! I build this website for a fictitious business.</p>
-            <p><a href="https://tiffanyray.github.io/surveyForm" target="_blank">surveyForm</a></p>
+          <div class="project">
+            <div class="project-info">
+              <h2>Camping Quiz</h2>
+              <p>When the quiz is submitted, an eventListener collects the value's of the radio buttons. If statements add up the global variable score of the quiz based on the value of each question. Then assigns a message to the modal based on the answers submitted.</p>
+            </div>
+            <div class="project-video-div">
+              <video autoplay loop width="300">
+                <source src="img/quizVideo.mp4" type="video/mp4">
+                  Sorry, your browser doesn't support embeded videos..
+              </video>
+              <div class="project-overlay">
+                <button class="project-button"><a href="https://tiffanyray.github.io/quiz/" target="_blank" >Project</a></button>
+                <button class="project-button"><a href="https://github.com/tiffanyray/quiz/tree/master/docs" target="_blank" >Code</a></button>
+              </div>
+            </div>
           </div>
-          <div class="react project">
-            <h1>React Projects:</h1>
-            <p><a href="https://tiffanyray.github.io/quoteGenerator" target="_blank">Quote Generator</a></p>
-            <p class="small-list">A project that I build using an API to source the quote. Other technologies include React, Webpack, SASS, JavaScript, and HTML</p>
-            <p><a href="https://tiffanyray.github.io/indecision" target="_blank">indecision</a></p>
-            <p class="small-list">This project utilized tools: webpack, babel, npm, and yarn. I used React.js along with SASS.</p>
-            <p><a href="https://tiffanyray.github.io/visibleToggle" target="_blank">visibleToggle</a></p>
-            <p>A basic React web app that will render a component when the button is pressed.</p>
-            <p><a href="https://tiffanyray.github.io/counter/" target="_blank">counter</a></p>
+          <!-- CSS Projects -->
+          <h1>CSS/SASS Projects:</h1>
+          <div class="project">
+            <div class="project-info">
+              <h2>Calendar</h2>
+              <p>I wanted to avoid using HTML tables when creating this project. Instead, I used unordered list to create a responive layout. I also used SASS to create the styles of this calendar.</p>
+            </div>
+            <div class="project-pic-div">
+              <img src="img/calendarPic.png" alt="Picture of calendar project" class="project-image"/>
+              <div class="project-overlay">
+                <button class="project-button"><a href="https://tiffanyray.github.io/calendar/" target="_blank" >Project</a></button>
+                <button class="project-button"><a href="https://github.com/tiffanyray/calendar" target="_blank" >Code</a></button>
+              </div>
+            </div>
           </div>
-
+          <div class="project">
+            <div class="project-info">
+              <h2>Landing Page</h2>
+              <p>A classic landing page.</p>
+            </div>
+            <div class="project-pic-div">
+              <img src="img/landingPagePic.png" alt="Landing page picture" class="project-image">
+              <div class="project-overlay">
+                  <button class="project-button"><a href="https://tiffanyray.github.io/landingPage/" target="_blank" >Project</a></button>
+                  <button class="project-button"><a href="https://github.com/tiffanyray/landingPage" target="_blank" >Code</a></button>
+                </div>
+            </div>
+          </div>
         </div>
-        <h2>Certification</h2>
+        <h2 class="section-heading">Certification</h2>
         <p class="text"><a href="https://www.freecodecamp.org/tiffanyray" target="_blank">freeCodeCamp - Responsive Web Design</a></p>
     </section>
 
@@ -128,7 +212,7 @@
     </div>
 
     <footer id="contact">
-      <h2>Connect With Me</h2>
+      <h2 class="section-heading">Connect With Me</h2>
       <div class="socialmedia-container flex">
 <!--        <img src="icon/1217086-128.png" alt="instagram icon with a link" class="socialmedia"/> -->
 <!--        <a href="" target="_blank"><img src="icon/111032-128.png" alt="facebook icon with a link" class="socialmedia"/></a> -->
