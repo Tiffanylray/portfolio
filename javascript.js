@@ -5,7 +5,8 @@ $(document).ready(() => {
       tickingResize = false,
       tickingScroll = false,
       $navUl = $('.nav-ul'),
-      $burger = ('.burger');
+      $navLis = $navUl.find('.nav-li'),
+      $burger = $('.burger');
 
   // Button Scroll Function
   $('a.scrollLink').on('click', function(event) {
@@ -17,10 +18,9 @@ $(document).ready(() => {
 
   //Mobile Nav bar 
   $('#mobile-menu').on('click', () => {
-    let $navUl = $('.nav-ul');
-    let $mobileMenu = $('#mobile-menu');
-    $('.nav-ul').addClass().slideToggle('slow');
-    $('.burger').toggleClass('nav-open');
+    $burger.toggleClass('nav-open');
+    $navUl.toggleClass('nav-open');
+    $navLis.toggleClass('nav-open');
   });
 
 //All Nav Scroll Events
@@ -32,11 +32,25 @@ $(document).ready(() => {
 
     //animating nav title & adding position fixed for navbar 
     if ($pos >= $canvasClientSize) {
+      //header add fixed class
       $header.addClass('display');
+      //title opacity 1
       $navTitle.addClass('header-show');
+      //adding opacity 1 to all lis
+      for (i = 0; i < $navLis.length; i++) {
+        let $navLiEl = $(`.nav-li-${[i + 1]}`);
+        $navLiEl.removeClass('nav-li-hide');
+      }
     } else if ($pos < $canvasClientSize) {
+      //removing fixed class
       $header.removeClass('display');
+      //setting opacity to 0
       $navTitle.removeClass('header-show');
+      //setting opacity to 0 for all lis
+      for (i = 0; i < $navlis.length; i++) {
+        let $navLiEl = $(`.nav-li-${[i + 1]}`);
+        $navLiEl.addClass('nav-li-hide');
+      }
     }
 
 
@@ -55,8 +69,8 @@ $(document).ready(() => {
 
 
   const onResize = () => {
-    $windowWidth = $(window).innderWidth();
-    $windowHeight = $(window).innderHeight();
+    $windowWidth = $(window).innerWidth();
+    $windowHeight = $(window).innerHeight();
 
     requestScroll();
 
