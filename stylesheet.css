@@ -62,10 +62,6 @@ section {
   transition: all .5s;
   cursor: pointer;
 }
-  .button:hover {
-    background-color: #FECFB0;
-    border-color: #FECFB0;
-  }
 
 a {
   text-decoration: none;
@@ -108,27 +104,23 @@ li {
     position: relative;
     top: 20vh;
     text-align: center;
+    width: 80vw;
+    margin: 0 auto;
   }
   .canvas h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
   .canvas h4 {
-    font-size: 2rem;
+    font-size: 1rem;
     margin: auto;
     margin-top: 1rem;
-    width: 80vw;
+    width: 70vw;
   }
   .canvas p {
     font-size: 1.25rem;
     margin-top: 1rem;
+    background-color: transparent;
   }
-  .fa-arrow-right {
-    transition: transform .3s;
-  }
-  .button:hover .fa-arrow-right {
-    transform: rotate(90deg);
-  }
-
 
 /* Changes the canvas header to view better on different screen heights */ 
 @media only screen and (min-height: 600px) {
@@ -166,10 +158,18 @@ li {
   }
 }
 
-
-
-
-
+@media (hover: hover) {
+  .fa-arrow-right {
+    transition: transform .3s;
+  }
+  .button:hover .fa-arrow-right {
+    transform: rotate(90deg);
+  }
+  .button:hover {
+    background-color: #FECFB0;
+    border-color: #FECFB0;
+  }
+}
 
 /* Navigation Bar */
 
@@ -287,7 +287,7 @@ header h1 {
 .burger {
   width: 40px;
   height: 2px;
-  position: relative;
+  position: fixed;
   margin: 8px;
   cursor: pointer;
   background-color: white;
@@ -295,6 +295,7 @@ header h1 {
   border-radius: 5px;
   outline: none;
   top: 20px;
+  right: 10px;
 }
 
 .burger::before {
