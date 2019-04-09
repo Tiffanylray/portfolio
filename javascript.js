@@ -1,6 +1,11 @@
 $(document).ready(() => {
-  let deviceWidth = $(window).width();
-  let deviceHeight = $(window).height();
+  let $windowWidth,
+      $windowHeight,
+      $pos,
+      tickingResize = false,
+      tickingScroll = false,
+      $navUl = $('.nav-ul'),
+      $burger = ('.burger');
 
   // Button Scroll Function
   $('a.scrollLink').on('click', function(event) {
@@ -15,60 +20,61 @@ $(document).ready(() => {
     let $navUl = $('.nav-ul');
     let $mobileMenu = $('#mobile-menu');
     $('.nav-ul').addClass().slideToggle('slow');
+    $('.burger').toggleClass('nav-open');
   });
 
-  $(window).bind("resize", () => {
+//All Nav Scroll Events
+  const onScroll = () => {
+    $pos = $(window).scrollTop();
+    let $header = $('header'),
+        $navTitle = $header.find('.header-title'),
+        $canvasClientSize = $('#canvas').height();
+
+    //animating nav title & adding position fixed for navbar 
+    if ($pos >= $canvasClientSize) {
+      $header.addClass('display');
+      $navTitle.addClass('header-show');
+    } else if ($pos < $canvasClientSize) {
+      $header.removeClass('display');
+      $navTitle.removeClass('header-show');
+    }
+
+
+    tickingScroll = false;
+  };
+
+  const requestScroll = () => {
+    if (!tickingScroll) {
+      requestAnimationFrame(onScroll);
+    }
+    tickingScroll = true;
+  };
+
+  $(window).on('scroll', requestScroll);
+
+
+
+  const onResize = () => {
+    $windowWidth = $(window).innderWidth();
+    $windowHeight = $(window).innderHeight();
+
+    requestScroll();
+
     if( $(window).width() > 900) {
       $('.nav-ul').removeAttr("style");
     }
-  });
 
+    tickingResize = false;
+  }
 
-  //Nav Bar Link highlights
-  $(window).on('scroll', function() {
-    let pos = $(window).scrollTop();
-    let sectionTop = pos + 70;
-    let navBar = $('#nav-bar');
-    let nav = navBar.find('.nav');
-    let navUl = nav.find('.nav-ul');
-    let navPos = navBar.position().top;
-
-
-    // Sticky Nar Bar
-    if (pos >= deviceHeight) {
-      navBar.addClass('display');
-      nav.addClass('fixed');
+  const requestResize = () => {
+    if (!tickingResize) {
+      requestAnimationFrame(onResize);
     }
-    if (pos < deviceHeight){
-      nav.removeClass('fixed');
-      navBar.removeClass('display');
-    };
+    tickingResize = true;
+  }
 
-    //Highlighing Nav Links
-
-    if (sectionTop > $('#about').offset().top) {
-      highlightLink('about-a');
-    }
-    if (sectionTop > $('#skills').offset().top) {
-      highlightLink('skills-a');
-    }
-    if (sectionTop > $('#projects').offset().top) {
-      highlightLink('projects-a');
-    }
-    if (sectionTop > $('#contact').offset().top) {
-      highlightLink('contact-a');
-    };
-
-    function highlightLink(id) {
-      $('.nav-ul .active').removeClass('active');
-      nav.find('[id="' + id + '"]').addClass('active');
-    };
-
-  });
-
-
-
-
+  $(window).on('resize', requestResize);
 
 
   //End of document ready function
