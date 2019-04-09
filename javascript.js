@@ -27,12 +27,19 @@ $(document).ready(() => {
   });
 
 
-  //Mobile Nav bar 
+  //opens mobile nav bar on click of burger
   $('#mobile-menu').on('click', () => {
     $burger.toggleClass('nav-open');
     $navUl.toggleClass('nav-open');
     $navLis.toggleClass('nav-open');
   });
+  //closes mobile nav bar on click of li
+  $navLis.on('click', () => {
+    $navUl.removeClass('nav-open');
+    $navLis.removeClass('nav-open');
+    $burger.removeClass('nav-open');
+  });
+
 
 //All Nav Scroll Events
   const onScroll = () => {
