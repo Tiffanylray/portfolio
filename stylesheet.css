@@ -425,6 +425,9 @@ header h1 {
   padding: 100px 0;
 }
 
+#connect {
+  padding: 100px 0;
+}
 
  #projects, #about {
   background-color: white;
@@ -538,6 +541,11 @@ header h1 {
   box-sizing: border-box;
   padding: .5rem 0;
   margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 /* Project Pictures & overlay */
@@ -558,23 +566,7 @@ header h1 {
   height: 100%;
 }
 
-.project-overlay {
-  transition: all .5s ease-in-out;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .project-button {
-  opacity: 0;
   transition: all .5s ease-in-out;
   box-sizing: border-box;
   width: 75px;
@@ -588,23 +580,16 @@ header h1 {
   border: 2px solid white;
 }
 
-.project-overlay:hover {
-  opacity: .9;
-}
-
-.project-overlay:hover .project-button {
-  opacity: 1;
-}
-
-.project-button:hover {
-  background-color: #FECFB0;
-  border-color: #FECFB0;
-}
-
 @media screen and (min-width: 900px) {
   .project-info {
     width: 50vw;
     padding: 1rem
+  }
+}
+@media (hover:hover) {
+  .project-button:hover {
+    background-color: #FECFB0;
+    border-color: #FECFB0;
   }
 }
 
