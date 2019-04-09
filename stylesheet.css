@@ -122,6 +122,7 @@ li {
     background-color: transparent;
   }
 
+
 /* Changes the canvas header to view better on different screen heights */ 
 @media only screen and (min-height: 600px) {
   .canvas-header {
@@ -415,76 +416,13 @@ header h1 {
 
 /* Section Breaks */
 /* Slanted Divs for skill section */
-.slantedSkillsA, .slantedSkillsB {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  background: #FECFB0;
-}
-.slantedSkillsA:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: inherit;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transform-origin: top right;
-  transform: skewY(4deg);
-}
-.slantedSkillsB:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: inherit;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transform-origin: top left;
-  transform: skewY(4deg);
-}
-/* Slanted Divs for contact section */ 
-.slantedContact {
-  position: relative;
-  top: 10px;
-  width: 100%;
-  height: 150px;
-  background: inherit;
-}
-.slantedContact:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: inherit;
-  top:0;
-  bottom: 0;
-  left: 0;
-  transform-origin: top right;
-  transform: skewY(7deg);
-}
-.slantedContact:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: inherit;
-  top:0;
-  bottom: 0;
-  right: 0;
-  transform-origin: top left;
-  transform: skewY(-7deg);
-}
 
 
 /* Skills Section */
 #skills {
   background-color: #FECFB0;
   color: #626262;
+  padding: 100px 0;
 }
 
 
