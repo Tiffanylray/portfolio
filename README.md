@@ -1,6 +1,6 @@
 #portfolio
 
-I recently rewrote the site. You can check it out at https://tiffanyray.dev
+I recently rewrote the site. You can check it out at https://www.tiffanyray.dev
 
 Hello! Welcome to my first portfolio site files. This was one of my first projects that I have slowly updated overtime!
 
